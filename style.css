@@ -1,0 +1,78 @@
+
+body {
+  background-image: url("Logo.jpg") ;
+  background-size: cover;
+  font-family: Roboto, sans-serif;
+}
+
+.merch {
+  color: red;
+}
+
+.container {
+  text-align: center;
+  padding: 0 40px;
+  margin-left: 100px;
+}
+
+h1 {
+  text-align: center;
+  color:skyblue;
+  font-size: 40px;
+}
+
+h2 {
+  text-align: center;
+  color:lightblue;
+  font-size: 25px;
+  margin:40px;
+}
+i {
+  font-size: 30px;
+  margin: 40px ;
+  color:indigo;
+
+
+
+}
+
+  /* Свойства фотографии*/
+.photo {
+  border-radius: 100px;
+  /* Радиус скругления */
+  border: 5px solid transparent;
+  /* Параметры рамки */
+  box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.52);
+  object-fit: cover;
+}
+
+  /* Эффект наведения на картинку */
+.photo:hover {
+  border: 3px solid #3366CC;
+}
+
+  /* Свойства ссылок */
+a {
+  display: block;
+  text-decoration:none;
+  margin-bottom: 20px;
+  position: relative;
+  color:white;
+}
+
+  /* Что делать при наведении на ссылку */
+a:hover {
+  color: black ;
+}
+
+  /* Этим свойством добавляем подчеркивание через создание псевдокласса */
+a::after {
+  content: '';
+  position: center;
+  left: 0;
+  right: 0;
+  transform: translateY(1.5em);
+  border-bottom: 1px solid #dadada;
+  width: 300px;
+}
+
